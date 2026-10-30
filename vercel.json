@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    { "source": "/raw/:id", "destination": "/index.html" },
+    { "source": "/p/:id", "destination": "/index.html" },
+    { "source": "/p/:id/edit", "destination": "/index.html" },
+    { "source": "/recent", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/raw/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" }
+      ]
+    }
+  ]
+}

@@ -189,3 +189,17 @@ textarea {
   padding: 32px;
   text-align: center;
 }
+
+.raw-line a {
+  color: var(--accent2);
+  word-break: break-all;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  background: #21262d;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
